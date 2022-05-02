@@ -9,7 +9,6 @@ class Player:
     Creates a Player class
     Takes argument self and returns rock
     Learn definition isn't used
-
     """
 
     def move(self):
@@ -25,7 +24,6 @@ class RandomPlayer:
     Creates a Random Player class
     Takes argument self and returns random string from list move
     Learn definition isn't used
-
     """
 
     def move(self):
@@ -42,11 +40,11 @@ class HumanPlayer:
     Takes argument self and requests user input for move
     Requests input so long as move1 is not in list move
     Learn definition isn't used
-
     """
 
     def move(self):
-        move1 = input("Would you like to play rock, paper or scissors?:").lower()
+        move1 = input(("Would you like to play rock, paper or scissors?:")
+                      .lower())
         while move1 not in move:
             move1 = input("Would you like to play rock, paper or scissors?:")
 
@@ -64,7 +62,6 @@ class ReflectPlayer:
     Returns random string from list move if their_move undefined
     Otherwise returns their_move
     Learn function assigns their_move to self variable
-
     """
 
     their_move = "None"
@@ -86,7 +83,6 @@ class CyclePlayer:
     Returns random string from list move if their_move undefined
     Otherwise cycles through variable options in order
     Learn function assigns my_move to self variable
-
     """
 
     my_move = "None"
@@ -128,7 +124,6 @@ class Game:
     Defines structure of the game
     Each player moves, each move is printed, the learn function is called
     The score is then registered
-
     """
 
     def __init__(self, p1, p2):  # Sets initial variable of game
